@@ -45,7 +45,7 @@
                   <password>Keerthisindhura1234$</password>
                           
                   <workerType>Micro</workerType>
-                          
+                   <objectStoreV2>true</objectStoreV2>    
                   
                           
                   <environment>Sandbox</environment>
