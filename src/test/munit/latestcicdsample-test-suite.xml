@@ -16,6 +16,14 @@
 			<munit-tools:assert-that doc:name="Assert that" doc:id="92595cf0-1cbc-4730-ba7d-e75b75b4e1b4" expression="#[payload]" is="#[MunitTools::notNullValue()]"/>
 		</munit:validation>
 	</munit:test>
+	<munit:test name="latestcicdsample-test-suite-latestcicdsampleFlowTest-fail" doc:id="884b1ee8-a516-4247-9f04-c539e51f9ce3" description="Test">
+			<munit:execution>
+				<flow-ref doc:name="Flow-ref to latestcicdsampleFlow" doc:id="45fcb4a8-8c54-4d95-a698-88c3bd9d8c01" name="latestcicdsampleFlow" />
+			</munit:execution>
+		<munit:validation>
+			<munit-tools:assert-equals doc:name="Assert equals" doc:id="9a793bc7-b68b-4308-840b-ac078646db34" actual='#["cicdddd"]' expected='#["cicd"]' message='#["payload mismatched"]'/>
+			</munit:validation>
+		</munit:test>
 
 
 </mule>
